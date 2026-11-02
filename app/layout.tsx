@@ -27,22 +27,22 @@ const neueHaas = localFont({
 });
 
 export const metadata: Metadata = {
-    metadataBase: new URL('https://ash1999.com'),
+    metadataBase: new URL('https://agatherapin.com'),
     icons: {
         icon: '/img/mini logo.webp',
         apple: '/apple-touch-icon.png',
     },
-    title: 'ash1999 - Portfolio',
-    description: 'Ash1999 - freelance graphic & web designer based in Nantes, France. Versatile creative: motion, branding, print, web, mixed media & typography. Open to work.',
+    title: 'Agathe Rapin - Portfolio',
+    description: 'Agathe Rapin - freelance graphic & web designer based in Nantes, France. Versatile creative: motion, branding, print, web, mixed media & typography. Open to work.',
     openGraph: {
-        title: 'ash1999 - Portfolio',
-        description: 'Ash1999 - freelance graphic & web designer based in Nantes, France. Versatile creative: motion, branding, print, web, mixed media & typography. Open to work.',
+        title: 'Agathe Rapin - Portfolio',
+        description: 'Agathe Rapin - freelance graphic & web designer based in Nantes, France. Versatile creative: motion, branding, print, web, mixed media & typography. Open to work.',
         images: [
             {
-                url: '/img/social-share.webp',
+                url: '/img/social-share.png',
                 width: 1200,
                 height: 630,
-                alt: 'ash1999 logo',
+                alt: 'Agathe Rapin logo',
                 type: 'image/png',
             },
         ],
@@ -51,14 +51,14 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary',
-        title: 'ash1999 - Portfolio',
-        description: 'Ash1999 - freelance graphic & web designer based in Nantes, France. Versatile creative: motion, branding, print, web, mixed media & typography. Open to work.',
+        title: 'Agathe Rapin - Portfolio',
+        description: 'Agathe Rapin - freelance graphic & web designer based in Nantes, France. Versatile creative: motion, branding, print, web, mixed media & typography. Open to work.',
         images: [
             {
-                url: '/img/social-share.webp',
+                url: '/img/social-share.png',
                 width: 1200,
                 height: 630,
-                alt: 'ash1999 logo',
+                alt: 'Agathe Rapin logo',
             },
         ],
     },
@@ -67,12 +67,12 @@ export const metadata: Metadata = {
 const personJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Person',
-    name: 'ASH1999',
+    name: 'Agathe Rapin',
     jobTitle: 'Graphic & web designer',
     description: 'Freelance graphic & web designer based in Nantes, France. Versatile creative: motion, branding, print, web, mixed media & typography.',
-    url: 'https://ash1999.com',
+    url: 'https://agatherapin.com',
     email: 'mailto:agathe.rapin@outlook.fr',
-    sameAs: ['https://www.instagram.com/ash1999__/'],
+    sameAs: ['https://www.instagram.com/agatherapin/'],
 };
 
 export default function RootLayout({

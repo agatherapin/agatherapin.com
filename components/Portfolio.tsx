@@ -725,7 +725,7 @@ export default function Portfolio() {
             {/* HEADER */}
             <div className="header">
                 <div className="header-bio">
-                    <h1 className="header-bio-title">ASH1999 graphic &amp; web designer</h1>
+                    <h1 className="header-bio-title">Agathe Rapin graphic &amp; web designer</h1>
                     <p>
                         ★ Intern at Tamisée: association dedicated to promoting local underground music. Social content, graphism, branding, photography & artistic direction.<br />
                         
@@ -737,8 +737,8 @@ export default function Portfolio() {
                     <p>
                         Based in Nantes, France<br />
                         link with me<br />
-                        <a href="https://www.instagram.com/ash1999__/" target="_blank" rel="noopener noreferrer">@ash1999__</a><br />
-                        <a href="mailto:contact@ash1999.com">contact@ash1999.com</a>
+                        <a href="https://www.instagram.com/agatherapin/" target="_blank" rel="noopener noreferrer">@agatherapin</a><br />
+                        <a href="mailto:agathe.rapin@outlook.fr">agathe.rapin@outlook.fr</a>
                     </p>
                 </div>
 
@@ -778,7 +778,7 @@ export default function Portfolio() {
                     <button className="modal-close" ref={profileModalCloseRef}>×</button>
                     <div className="modal-body">
                         <p className="profile-bio">
-                            <strong>ASH1999 graphic &amp; web designer</strong>
+                            <strong>Agathe Rapin graphic &amp; web designer</strong>
                         </p>
                         <p className="profile-bio">
                             ★ Intern at Tamisée: association dedicated to promoting local underground music. Social content, graphism, branding, photography &amp; artistic direction.
@@ -790,8 +790,8 @@ export default function Portfolio() {
                         <p className="profile-bio">
                             Based in Nantes, France<br />
                             link with me<br />
-                            <a href="https://www.instagram.com/ash1999__/" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>@ash1999__</a><br />
-                            <a href="mailto:contact@ash1999.com" style={{color: 'inherit', textDecoration: 'none'}}>contact@ash1999.com</a>
+                            <a href="https://www.instagram.com/agatherapin/" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>@agatherapin</a><br />
+                            <a href="mailto:agathe.rapin@outlook.fr" style={{color: 'inherit', textDecoration: 'none'}}>agathe.rapin@outlook.fr</a>
                         </p>
                     </div>
                 </div>

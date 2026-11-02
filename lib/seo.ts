@@ -9,9 +9,9 @@ export function projectMetadata(slug: string): Metadata {
 
     const ogImage = STATIC_IMAGE.test(project.image)
         ? project.image
-        : project.gallery.find((src) => STATIC_IMAGE.test(src)) ?? '/img/social-share.webp';
+        : project.gallery.find((src) => STATIC_IMAGE.test(src)) ?? '/img/social-share.png';
 
-    const title = `${project.title} — ash1999`;
+    const title = `${project.title} — Agathe Rapin`;
     const description = project.description;
     const url = `/projects/${project.slug}`;
 

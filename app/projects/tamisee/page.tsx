@@ -17,11 +17,11 @@ const images = [
 ];
 
 const credits = [
-    'artistic direction: @ash1999__ & @zero.to.death',
-    'photography: @brutal.vizion & @ash1999__',
+    'artistic direction: @agatherapin & @zero.to.death',
+    'photography: @brutal.vizion & @agatherapin',
     'models: @kushinailz & @edwin.ksb',
     'merch design: @zero.to.death',
-    '3D scan: @ash1999__',
+    '3D scan: @agatherapin',
     '<br/>',
     'Concert artists: 8ruki & rowjay',
     'hosted and conceived by @Tamisee__',

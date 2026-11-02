@@ -15,9 +15,9 @@ const images = [
 
 const credits = [
     'exhibition about mapping and motion design',
-    'branding & artistic direction: @ash1999__ & @art_by_apolline',
+    'branding & artistic direction: @agatherapin & @art_by_apolline',
     'title design: @art_by_apolline',
-    'motion design: @ash1999__',
+    'motion design: @agatherapin',
     'mapping: third-year students at e-artsup ',
     'date: november 2024',
     'location: La cale 2 créateurs, Nantes',

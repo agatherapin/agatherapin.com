@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { projects } from '@/data/projects';
 
-const BASE_URL = 'https://ash1999.com';
+const BASE_URL = 'https://agatherapin.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
     return [
