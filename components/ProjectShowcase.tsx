@@ -304,7 +304,7 @@ export default function ProjectShowcase({
                                     <Link key={project.slug} href={`/projects/${project.slug}`} className="showcase-related-card">
                                         <div className="showcase-related-media">
                                             {isVideo ? (
-                                                <video src={project.image} autoPlay loop muted playsInline />
+                                                <video src={project.image} poster={project.poster} autoPlay loop muted playsInline />
                                             ) : (
                                                 <img src={project.image} alt={project.title} loading="lazy" />
                                             )}

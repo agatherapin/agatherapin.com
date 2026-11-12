@@ -6,6 +6,7 @@ export interface Project {
     tags: string[];
     image: string;
     video?: string;
+    poster?: string;
     gallery: string[];
     width: number;
     aspectRatio: number;
@@ -44,8 +45,9 @@ export const projects: Project[] = [
         subtitle: 'Jan 2024',
         description: 'Trifold brochure to promote a fictional festival around rap music. Suburban is the name of a fictitious organization about urban culture, streetwear & rap music.',
         tags: ['Branding', 'Print', 'Typography'],
-        image: '/img/suburban/titre-motion.mp4',
-        video: '/img/suburban/titre-motion.mp4',
+        image: '/img/covers/suburban.mp4',
+        video: '/img/covers/suburban.mp4',
+        poster: '/img/covers/suburban.webp',
         gallery: ['/img/suburban/exterieur-mockup-suburban.webp', '/img/suburban/interieur-mockup-suburban.webp', '/img/suburban/logo.webp'],
         width: 240,
         aspectRatio: 3 / 4,
@@ -58,8 +60,9 @@ export const projects: Project[] = [
         subtitle: 'March 2026',
         description: 'Video for my project La Pampa, a media for local artists and events.',
         tags: ['Motion Design', 'Print', 'Webdesign', 'Interactive'],
-        image: 'https://pub-4640cb8748ff42a1bb9564c86066b471.r2.dev/motion-la-pampa.mp4',
-        video: 'https://pub-4640cb8748ff42a1bb9564c86066b471.r2.dev/motion-la-pampa.mp4',
+        image: '/img/covers/la-pampa.mp4',
+        video: '/img/covers/la-pampa.mp4',
+        poster: '/img/covers/la-pampa.webp',
         gallery: [
             'video:https://pub-4640cb8748ff42a1bb9564c86066b471.r2.dev/motion-la-pampa.mp4',
             '/img/la_pampa/page_1.webp', '/img/la_pampa/page_2.webp',
@@ -78,8 +81,9 @@ export const projects: Project[] = [
         subtitle: 'June 2024',
         description: 'As a great fan of Dieter Rams work, I decided to dedicate this web design project to the wall unit he designed for Braun in the 60s.',
         tags: ['Web Design'],
-        image: 'https://pub-4640cb8748ff42a1bb9564c86066b471.r2.dev/wandalange_maquette_v1%20(1080p).mp4',
-        video: 'https://pub-4640cb8748ff42a1bb9564c86066b471.r2.dev/wandalange_maquette_v1%20(1080p).mp4',
+        image: '/img/covers/wandanlage.mp4',
+        video: '/img/covers/wandanlage.mp4',
+        poster: '/img/covers/wandanlage.webp',
         gallery: ['video:https://pub-4640cb8748ff42a1bb9564c86066b471.r2.dev/wandalange_maquette_v1%20(1080p).mp4', '/img/wandanlage/page-close-up-platine.webp', '/img/wandanlage/page-previsualisation.webp', '/img/wandanlage/page-404.webp', '/img/wandanlage/scroll-horizontal.webp', '/img/wandanlage/footer.webp'],
         width: 320,
         aspectRatio: 4 / 3,
@@ -92,8 +96,9 @@ export const projects: Project[] = [
         subtitle: 'November 2024',
         description: 'The Interférences exhibition revolves around mapping and motion design, and showcases the work of third-year motion design students at E-artsup.',
         tags: ['Branding', 'Print', 'Motion Design'],
-        image: '/img/interferences/motion-interferences.mp4',
-        video: '/img/interferences/motion-interferences.mp4',
+        image: '/img/covers/interferences.mp4',
+        video: '/img/covers/interferences.mp4',
+        poster: '/img/covers/interferences.webp',
         gallery: ['/img/interferences/affiche-la-cale.webp','/img/interferences/affiche-final.webp', 
             'video:https://pub-4640cb8748ff42a1bb9564c86066b471.r2.dev/interference-video-1.mp4',
             '/img/interferences/flyer-face.webp', '/img/interferences/flyer-verso.webp', 'video:/img/interferences/motion-interferences.mp4'],
@@ -129,8 +134,9 @@ export const projects: Project[] = [
         subtitle: 'December 2025',
         description: 'Short video to promote the Wall Mounted CD Player from Muji.',
         tags: ['Motion Design'],
-        image: 'https://pub-4640cb8748ff42a1bb9564c86066b471.r2.dev/RAPIN_AGATHE_MOTION.mp4',
-        video: 'https://pub-4640cb8748ff42a1bb9564c86066b471.r2.dev/RAPIN_AGATHE_MOTION.mp4',
+        image: '/img/covers/motion-for-muji.mp4',
+        video: '/img/covers/motion-for-muji.mp4',
+        poster: '/img/covers/motion-for-muji.webp',
         gallery: ['video:https://pub-4640cb8748ff42a1bb9564c86066b471.r2.dev/RAPIN_AGATHE_MOTION.mp4'],
         width: 320,
         aspectRatio: 4 / 3,
@@ -143,8 +149,9 @@ export const projects: Project[] = [
         subtitle: 'May 2026',
         description: 'Merchandising design and creation for Tamisée.',
         tags: ['Branding'],
-        image: '/img/tamisee/scan-leo.mp4',
-        video: '/img/tamisee/scan-leo.mp4',
+        image: '/img/covers/tamisee.mp4',
+        video: '/img/covers/tamisee.mp4',
+        poster: '/img/covers/tamisee.webp',
         gallery: [
             '/img/tamisee/img8474.webp', '/img/tamisee/img8412.webp',
             '/img/tamisee/img8408.webp', '/img/tamisee/img8310.webp',

@@ -188,7 +188,7 @@ export default function Portfolio() {
                         item.style.transform = 'translate(-50%, -50%)';
 
                         const coverHTML = project.video
-                            ? `<video muted loop playsinline preload="metadata" class="img-fade-in" src="${project.video}"></video>`
+                            ? `<video muted loop playsinline preload="none" class="img-fade-in" poster="${project.poster}" data-src="${project.video}"></video>`
                             : `<div class="img-placeholder" data-src="${project.image}" data-alt="${project.title}"></div>`;
 
                         item.innerHTML = `
@@ -222,12 +222,6 @@ export default function Portfolio() {
             }
 
             canvas.appendChild(fragment);
-
-            if (!isTouchDevice) {
-                canvas.querySelectorAll('video').forEach(v => {
-                    (v as HTMLVideoElement).play().catch(() => {});
-                });
-            }
         }
 
         // =============================================
@@ -572,12 +566,10 @@ export default function Portfolio() {
                 img.decode()
                     .then(() => {
                         swapPlaceholders(src);
-                        if (webpDone >= 2) hideLoader();
                         if (++webpDone >= totalWebp) tryLoadGifs();
                     })
                     .catch(() => {
                         swapPlaceholders(src);
-                        if (webpDone >= 2) hideLoader();
                         if (++webpDone >= totalWebp) tryLoadGifs();
                     });
             });
@@ -640,10 +632,8 @@ export default function Portfolio() {
             if (loaderHidden || !loader) return;
             loaderHidden = true;
             loader.classList.add('loaded');
-            setTimeout(() => { loader.style.display = 'none'; }, 700);
+            setTimeout(() => { loader.style.display = 'none'; }, 300);
         }
-
-        const loaderTimeout = setTimeout(hideLoader, 3000);
 
         // =============================================
         // INIT
@@ -651,6 +641,7 @@ export default function Portfolio() {
         createFilterButtons();
         createItems();
         loadImagesAsync();
+        hideLoader();
 
         let videoObserver: IntersectionObserver | null = null;
 
@@ -666,6 +657,10 @@ export default function Portfolio() {
                 const video = entry.target as HTMLVideoElement;
                 const item = video.closest('.item') as HTMLElement | null;
                 if (entry.isIntersecting && item) {
+                    if (video.dataset.src) {
+                        video.src = video.dataset.src;
+                        delete video.dataset.src;
+                    }
                     video.play().catch(() => {});
                 } else {
                     video.pause();
@@ -682,7 +677,6 @@ export default function Portfolio() {
         // =============================================
         return () => {
             alive = false;
-            clearTimeout(loaderTimeout);
 
             if (animationId) cancelAnimationFrame(animationId);
             if (parallaxRafId) cancelAnimationFrame(parallaxRafId);
@@ -725,7 +719,7 @@ export default function Portfolio() {
             {/* HEADER */}
             <div className="header">
                 <div className="header-bio">
-                    <h1 className="header-bio-title">Agathe Rapin graphic &amp; web designer</h1>
+                    <h1 className="header-bio-title">Agathe Rapin · Graphic &amp; web designer</h1>
                     <p>
                         ★ Intern at Tamisée: association dedicated to promoting local underground music. Social content, graphism, branding, photography & artistic direction.<br />
                         
@@ -735,10 +729,10 @@ export default function Portfolio() {
                         Merch rebranding, logo creation and mockups.<br />
                     </p>
                     <p>
-                        Based in Nantes, France<br />
+                        <strong> Based in Nantes, France<br />
                         link with me<br />
                         <a href="https://www.instagram.com/agatherapin/" target="_blank" rel="noopener noreferrer">@agatherapin</a><br />
-                        <a href="mailto:agathe.rapin@outlook.fr">agathe.rapin@outlook.fr</a>
+                        <a href="mailto:agathe.rapin@outlook.fr">agathe.rapin@outlook.fr</a></strong>
                     </p>
                 </div>
 
